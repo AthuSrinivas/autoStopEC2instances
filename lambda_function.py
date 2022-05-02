@@ -109,11 +109,11 @@ def sendmail(eachinstance,detailsofeach,typeofmail,req):
     subject = ""
     if typeofmail == "Stopped":
         subject = "Instance of instanceID "+eachinstance+" has been Stopped."
-        body = "Dear user,\n\nWe have stopped the instance with the InstanceID "+eachinstance+" which was created by you as it did not contain the following tag(s) "+','.join(req)+". Please make sure you create the tags before restarting the instance if you do not want the instance to be stopped again. \n\n Sincerely, \nAccount Owner :)"
+        body = "Dear user,\n\nWe have stopped the instance with the InstanceID "+eachinstance+" which was created by you as it did not contain the following tag(s): "+','.join(req)+". Please make sure you create the tags before restarting the instance if you do not want the instance to be stopped again. \n\n Sincerely, \nAccount Owner :)"
         actualmailsend(eachinstance,detailsofeach['tags']['created by'],body,subject)
     if typeofmail == "MissingTags":
         subject = "Instance of instanceID "+eachinstance+" will be Stopped."
-        body = "Dear user,\n\nThe instance with the InstanceID "+eachinstance+" which was created by you will be Stopped in "+str(hours)+" Hours as it does not contain the following tag(s) "+','.join(req)+". \nYou got this mail as the created by tag has your email address in it. If you think this is a misunderstanding, Please update the created by tag of the Instance. \n\n Sincerely, \n Account Owner :)"
+        body = "Dear user,\n\nThe instance with the InstanceID "+eachinstance+" which was created by you will be Stopped in "+str(hours)+" Hours as it does not contain the following tag(s): "+','.join(req)+". \nYou got this mail as the created by tag has your email address in it. If you think this is a misunderstanding, Please update the created by tag of the Instance. \n\n Sincerely, \n Account Owner :)"
         actualmailsend(eachinstance,detailsofeach['tags']['created by'],body,subject)
     
 #Close an Instance
