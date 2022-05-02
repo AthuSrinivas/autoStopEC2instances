@@ -1,11 +1,11 @@
 # autoStopEC2instances
 This is a repository for a lambda function to automatically stop EC2 Instances based on tags and time.
 
-*It runs everyhour to check for running EC2 instances and checks if required tag(s) are added.
+>It runs everyhour to check for running EC2 instances and checks if required tag(s) are added.
 
-*If the required tag(s) are not added, it sends a notification mail to the email present in "created by" tag of the Instance.
+>If the required tag(s) are not added, it sends a notification mail to the email present in "created by" tag of the Instance.
 
-*If the tags are not added even after 6 hours of the notification, the instance is terminated and the same is notified. 
+>If the tags are not added even after 6 hours of the notification, the instance is terminated and the same is notified. 
 
 Development Steps:
 
@@ -36,6 +36,7 @@ Development Steps:
 16. Let the Script do it's job.
 
 Note:
+
 Change Required tags and number of hours as per neccessary.
 
 Check CloudwatchLogs for additional logs.
