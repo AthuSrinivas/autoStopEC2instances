@@ -10,13 +10,13 @@ Development Steps:
 2. Select create Role.
 3. Select AWS Service under Trusted entity type and Lambda under usecases.
 4. Search and select the following policies
-  *AWSLambdaBasicExecutionRole
-  *AWSLambdaEdgeExecutionRole
-  *pinpoint-email-ers-
-  *AmazonEC2FullAccess
-  *CloudWatchFullAccess
-  *AmazonSESFullAccess
-  *CloudWatchLogsFullAccess
+  >AWSLambdaBasicExecutionRole
+  >AWSLambdaEdgeExecutionRole
+  >pinpoint-email-ers-
+  >AmazonEC2FullAccess
+  >CloudWatchFullAccess
+  >AmazonSESFullAccess
+  >CloudWatchLogsFullAccess
 5. Give an appropriate Rolename
 6. Open the Functions page of the Lambda console.
 7. Make sure "Author from Scratch" is selected.
