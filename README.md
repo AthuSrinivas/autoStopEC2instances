@@ -10,13 +10,13 @@ Development Steps:
 2. Select create Role.
 3. Select AWS Service under Trusted entity type and Lambda under usecases.
 4. Search and select the following policies
-  >AWSLambdaBasicExecutionRole\n
-  >AWSLambdaEdgeExecutionRole\n
-  >pinpoint-email-ers-\n
-  >AmazonEC2FullAccess\n
-  >CloudWatchFullAccess\n
-  >AmazonSESFullAccess\n
-  >CloudWatchLogsFullAccess\n
+  >AWSLambdaBasicExecutionRole<br/>
+  >AWSLambdaEdgeExecutionRole<br/>
+  >pinpoint-email-ers-<br/>
+  >AmazonEC2FullAccess<br/>
+  >CloudWatchFullAccess<br/>
+  >AmazonSESFullAccess<br/>
+  >CloudWatchLogsFullAccess<br/>
 5. Give an appropriate Rolename
 6. Open the Functions page of the Lambda console.
 7. Make sure "Author from Scratch" is selected.
@@ -28,8 +28,8 @@ Development Steps:
 13. Configure SES for email's to send.
 14. Configure Pinpoint for email's to be recieved when the script is invoked.
 15. Mandatory Edits:
-  *Sourceadd: Change Source Address to email from which the notifications are sent.
-  *AWS_REGION: As per configuration.
+  >Sourceadd: Change Source Address to email from which the notifications are sent.<br/>
+  >AWS_REGION: As per configuration.<br/>
 16. Let the Script do it's job.
 
 Note:
